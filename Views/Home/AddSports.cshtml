@@ -1,0 +1,19 @@
+﻿@model EadQuiz02.Models.Sport
+<h2>Add Sports Item</h2>
+
+<!DOCTYPE html>
+<html>
+
+<body>
+    <form id="add" action="/Home/Add2" method="get">
+        Name: <input type="text" name="name" />
+        <br>
+        Price:  <input type="text" name="price" />
+        <br>
+        Brand: <input type="text" name="brand" />
+        <br />
+        <a href="#" class="button" onclick="document.getElementById('add').submit()"><span><span>Add</span></span></a>
+    </form>
+</body>
+
+</html>

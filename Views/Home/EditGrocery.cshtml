@@ -1,0 +1,20 @@
+﻿@model EadQuiz02.Models.grocery
+<h2>Edit Grocery</h2>
+
+<!DOCTYPE html>
+<html>
+
+<body>
+    <form id="edit" action="/Home/Edit/@Model.Id" method="get">
+        <br />
+        New Name: <input type="text" value ="@Model.name"name="name" />
+        <br>
+        New Price: <input type="text" value="@Model.price"name="price" />
+        <br>
+        New Brand: <input type="text" value="@Model.brand"name="brand" />
+        <br />
+        <a href="#" class="button" onclick="document.getElementById('edit').submit()"><span><span>Edit</span></span></a>
+    </form>
+</body>
+
+</html>

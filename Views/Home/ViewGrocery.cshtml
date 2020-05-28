@@ -1,0 +1,24 @@
+﻿@model IEnumerable<EadQuiz02.Models.grocery>
+
+<h2>Grocery Items</h2>
+
+<table border="1">
+    <tr>
+        <td>  ID  </td>
+        <td> Name </td>
+        <td> Price </td>
+        <td> Brand </td>
+    </tr>
+    @foreach (var s in Model)
+    {
+        <tr>
+            <td>@s.Id</td>
+            <td>@s.name</td>
+            <td>@s.price</td>
+            <td>@s.brand</td>
+            <td><a href="/Home/EditGrocery/@s.Id">Edit</a></td>
+        </tr>
+    }
+
+</table>
+
